@@ -12,11 +12,10 @@ const Modal = props => {
     navigator.clipboard
       .writeText(retrospectiveURL)
       .then(() => {
-        alert('copied successfully')
         setLinkCopied(true)
       })
       .catch(err => {
-        alert('something went wrong copying', err.toString())
+        console.log('something went wrong copying text', err.toString())
       })
   }
   return (
