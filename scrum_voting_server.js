@@ -8,7 +8,7 @@ app.use(express.static(__dirname + '/public'))
 const expressServer = app.listen(process.env.PORT || 3000)
 const io = socketio(expressServer, {
   cors: {
-    origin: "https://mn-agile-retrospectives.web.app/",
+    origin: "https://mn-agile-retrospectives.web.app",
     methods: "*"
   }
 })
