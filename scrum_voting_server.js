@@ -5,14 +5,13 @@ const allRooms = require('./classes/AllRooms')
 const Room = require('./classes/Room')
 
 app.use(express.static(__dirname + '/public'))
-const expressServer = app.listen(9000)
+const expressServer = app.listen(process.env.PORT || 3000)
 const io = socketio(expressServer, {
   cors: {
     origin: "https://mn-agile-retrospectives.web.app/",
     methods: "*"
   }
 })
-
 io.of('/').on('connection', socket => {
   socket.emit('message', 'hi from the server')
   let roomBeingLeft = null
