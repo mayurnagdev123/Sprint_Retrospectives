@@ -1,0 +1,89 @@
+.home {
+  margin-top: 100px;
+  padding: 66px 150px;
+  text-align: left;
+}
+
+.homeHeading {
+  font-size: 85px;
+  font-family: 'League Gothic', sans-serif;
+}
+
+.homeSubHeading {
+  font-family: 'Hubballi', cursive;
+  font-size: 36px;
+}
+
+.greenText {
+  color: #60c120;
+}
+
+.homeButton {
+  padding: 10px;
+  width: 35%;
+  margin-top: 16px;
+  font-size: 1.25rem !important;
+}
+@media only screen and (max-width: 350px) {
+  .home {
+    padding: 65px 7px;
+    margin-top: 86px;
+  }
+  .homeHeading {
+    font-size: 46px;
+  }
+  .homeSubHeading {
+    font-size: 26px;
+  }
+  .homeButton {
+    width: 100%;
+    font-size: 1.2rem !important;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 500px) {
+  .home {
+    padding: 72px 7px;
+    margin-top: 72px;
+  }
+  .homeHeading {
+    font-size: 58px;
+  }
+  .homeSubHeading {
+    font-size: 27px;
+  }
+  .homeButton {
+    width: 100%;
+    font-size: 1.2rem !important;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .home {
+    margin-top: 78px;
+    padding: 49px 24px;
+  }
+  .homeHeading {
+    font-size: 73px;
+  }
+  .homeSubHeading {
+    font-size: 29px;
+  }
+  .homeButton {
+    width: 100%;
+    font-size: 1.2rem !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1600px) {
+  .homeButton {
+    width: 70%;
+  }
+  .home {
+    margin-top: 39px;
+    padding: 53px 44px;
+  }
+  .homeSubHeading {
+    font-size: 33px;
+  }
+  .homeHeading {
+    font-size: 77px;
+  }
+}

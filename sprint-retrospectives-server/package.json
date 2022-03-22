@@ -1,0 +1,19 @@
+{
+  "name": "scrum-voting-server",
+  "version": "1.0.0",
+  "description": "Node Server for Scrum Voting ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "14.15.0"
+  },
+  "author": "mayurnagdev123",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.4.1"
+  }
+}

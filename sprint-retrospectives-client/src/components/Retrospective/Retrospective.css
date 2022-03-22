@@ -1,0 +1,23 @@
+.retrospectiveLabel {
+  margin-top: 60px;
+  padding: 30px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Hubballi', cursive;
+  font-weight: bold;
+}
+@media only screen and (max-width: 500px) {
+  .retrospectiveLabel {
+    margin-top: 90px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .retrospectiveLabel {
+    margin-top: 105px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .retrospectiveLabel {
+    margin-top: 55px;
+  }
+}

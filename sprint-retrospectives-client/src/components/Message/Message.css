@@ -1,0 +1,103 @@
+@keyframes example {
+  from {
+    background-color: white;
+    opacity: 0;
+  }
+  to {
+    background-image: linear-gradient(rgb(255, 255, 224), #f1ff62);
+    opacity: 1;
+  }
+}
+@keyframes showOptionalItems {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.additionalItems {
+  opacity: 0;
+}
+
+/* The element to apply the animation to */
+.animationDiv {
+  background-image: linear-gradient(rgb(255, 255, 224), #f1ff62);
+  animation-name: example;
+  animation-duration: 1.5s;
+  font-size: 0.9em;
+}
+.animationDiv:hover > .additionalItems {
+  animation-name: showOptionalItems;
+  animation-duration: 1.5s;
+  opacity: 1;
+}
+
+.dustbin {
+  position: relative;
+}
+
+.dustbin::before {
+  font-family: FontAwesome;
+  top: 0;
+  left: -5px;
+  padding-right: 9px;
+  font-size: 19px;
+  margin-left: 12px;
+  cursor: pointer;
+  content: '\f1f8';
+}
+.thumbsUp {
+  position: relative;
+  pointer-events: all;
+}
+
+.thumbsUp::before {
+  font-family: FontAwesome;
+  top: 0;
+  left: -5px;
+  padding-right: 9px;
+  font-size: 19px;
+  margin-left: 12px;
+  content: '\f164';
+}
+.thumbsUpActive {
+  pointer-events: none;
+}
+
+.thumbsDown {
+  position: relative;
+}
+
+.thumbsDown::before {
+  font-family: FontAwesome;
+  top: 0;
+  left: -5px;
+  padding-right: 9px;
+  font-size: 19px;
+  margin-left: 12px;
+  content: '\f165';
+}
+.messageText {
+  font-size: 1.7rem;
+}
+.votes {
+  right: 1rem;
+  position: absolute;
+  font-size: 1.3rem;
+}
+.transparentBtn {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  overflow: hidden;
+  outline: none;
+}
+@media only screen and (max-width: 579px) {
+  .messageText {
+    font-size: 1.5rem;
+  }
+  .votes {
+    font-size: 1.1rem;
+  }
+}

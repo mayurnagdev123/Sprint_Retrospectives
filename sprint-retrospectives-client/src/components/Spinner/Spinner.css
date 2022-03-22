@@ -1,0 +1,18 @@
+.spinner {
+  margin-top: 350px;
+}
+.spinnerElement {
+  margin: 0px 24px;
+  width: 3rem;
+  height: 3rem;
+}
+@media only screen and (max-width: 530px) {
+  .spinner {
+    margin-top: 290px;
+  }
+  .spinnerElement {
+    margin: 0px 10px;
+    width: 2rem;
+    height: 2rem;
+  }
+}
