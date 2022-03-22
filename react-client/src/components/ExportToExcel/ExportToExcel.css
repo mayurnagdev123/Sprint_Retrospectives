@@ -1,0 +1,14 @@
+.download {
+  position: relative;
+}
+.download::before {
+  font-family: FontAwesome;
+  top: 0;
+  left: -5px;
+  padding-right: 9px;
+  content: '\f019';
+}
+
+.hiddenExcel {
+  display: none;
+}
