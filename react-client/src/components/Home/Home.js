@@ -11,22 +11,22 @@ const Home = props => {
   }, [])
 
   function createRetrospective () {
+    setShowSpinner(true)
     socket.emit('create_retrospective', null, function (id) {
       setRetrospectiveId(id)
-      setShowSpinner(true)
     })
   }
   useEffect(() => {
-    setTimeout(() => {
-      if (retrospectiveId != null) {
-        props.history.replace({
-          pathname: '/retrospectives',
-          search: `id=${retrospectiveId}`,
-          state: 'HOST'
-        })
-      }
-    }, 1400)
+    if (retrospectiveId != null) {
+      props.history.replace({
+        pathname: '/retrospectives',
+        search: `id=${retrospectiveId}`,
+        state: 'HOST'
+      })
+    }
+    return () => setShowSpinner(false)
   }, [retrospectiveId, props.history])
+
 
   return showSpinner ? (
     <Spinner />
