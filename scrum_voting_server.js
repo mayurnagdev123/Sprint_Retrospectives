@@ -61,6 +61,8 @@ io.of('/').on('connection', socket => {
         broadcastHistoryToAllClients(room)
       } else {
         callback(null, `Error: Invalid Room ${roomId}`)
+		console.log("room", roomId, "not found!. All rooms are");
+		console.log(allRooms.getAllRooms());
       }
     } catch (err) {
       console.log('[JoinRoom] An error occured', err.toString())
